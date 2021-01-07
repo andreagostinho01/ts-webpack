@@ -15,7 +15,6 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js']
   },
-  devtool: 'eval-source-map',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public')
@@ -24,5 +23,6 @@ module.exports = {
     publicPath: '/',
     contentBase: path.join(__dirname, 'public')
   },
+  devtool: 'eval-source-map', // 'eval-source-map' is for development, use 'source-map' for production
   mode: 'development'
 }
