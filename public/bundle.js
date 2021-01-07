@@ -11,6 +11,6 @@
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-eval("\r\nconsole.log('hello world!');\r\nconsole.log('i am a pineapple two times');\r\n\n\n//# sourceURL=webpack://ts-webpack/./src/index.ts?");
+eval("\r\nconsole.log('hello world!');\r\nconsole.log('another log');\r\n\n\n//# sourceURL=webpack://ts-webpack/./src/index.ts?");
 /******/ })()
 ;
