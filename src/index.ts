@@ -1,9 +1,10 @@
-import { formData } from './forms';
+import formData from './forms';
 
 const form = document.querySelector('form')!;
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const data = formData(form);
-  console.log(data);
+form.addEventListener('submit', (e: Event) => {
+    e.preventDefault();
+
+    const data = formData(form);
+    console.log(data);
 });
