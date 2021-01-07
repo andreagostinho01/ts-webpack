@@ -1,28 +1,28 @@
 {
-  "name": "webpack-and-typescript",
+  "name": "ts-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack-dev-server",
+    "serve": "webpack serve --port 3333",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamshaunjp/webpack-and-typescript.git"
+    "url": "git+https://github.com/andreagostinho01/ts-webpack.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iamshaunjp/webpack-and-typescript/issues"
+    "url": "https://github.com/andreagostinho01/ts-webpack/issues"
   },
-  "homepage": "https://github.com/iamshaunjp/webpack-and-typescript#readme",
+  "homepage": "https://github.com/andreagostinho01/ts-webpack#readme",
   "devDependencies": {
-    "ts-loader": "^6.2.2",
-    "typescript": "^3.8.3",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "ts-loader": "^8.0.14",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
   }
 }

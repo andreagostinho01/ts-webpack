@@ -5,18 +5,23 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts$/,
-        include: [path.resolve(__dirname, 'src')],
+        test: /\.tsx?$/,
         use: 'ts-loader',
+        include: [path.resolve(__dirname, 'src')],
+        exclude: /node_modules/
       }
     ]
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.ts', '.tsx', '.js']
   },
   output: {
-    publicPath: 'public',
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'public')
   },
-};
+  devServer: {
+    publicPath: '/',
+    contentBase: path.join(__dirname, 'public')
+  },
+  mode: 'development'
+}
